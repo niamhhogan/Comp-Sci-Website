@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Computing Era - HCETSS 6th Year Computer Science</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Back to Dashboard</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" style="position:absolute;top:1rem;right:2rem;padding:0.5rem 1rem;border-radius:20px;border:none;background:var(--secondary-color);color:var(--primary-color);font-weight:bold;cursor:pointer;">Light Mode</button>
+        <h1>Modern Computing Era</h1>
+        <p class="subtitle">The Age of Personal Computing and Internet (1980 - Present)</p>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>IBM PC (1981)</h3>
+                    <p>The IBM Personal Computer standardized the PC industry and created the modern PC era. It introduced the architecture that would dominate personal computing.</p>
+                    <ul class="key-points">
+                        <li>Intel 8088 processor</li>
+                        <li>MS-DOS operating system</li>
+                        <li>Open architecture design</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>World Wide Web (1989-1991)</h3>
+                    <p>Tim Berners-Lee invented the World Wide Web at CERN, revolutionizing how we share and access information.</p>
+                    <ul class="key-points">
+                        <li>First web browser</li>
+                        <li>HTML language creation</li>
+                        <li>HTTP protocol development</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Linux (1991)</h3>
+                    <p>Linus Torvalds created Linux, a free and open-source operating system that would become the foundation of many modern technologies.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Smartphone Revolution (2007)</h3>
+                    <p>The iPhone introduction marked the beginning of the modern smartphone era, putting powerful computers in everyone's pockets.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Cloud Computing (2006-Present)</h3>
+                    <p>Amazon Web Services launched, beginning the cloud computing revolution that would transform how we use and think about computing resources.</p>
+                </div>
+            </div>
+
+            <section class="interactive-section">
+                <h2>Key Technologies</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>Personal Computing</h3>
+                        <p>The democratization of computing power</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Internet Revolution</h3>
+                        <p>Global connectivity and information sharing</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Mobile Computing</h3>
+                        <p>Computing anywhere, anytime</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="fun-fact" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;color:var(--secondary-color);font-size:1.1rem;">
+                <strong>Did You Know?</strong> The first iPhone had less computing power than today's smartwatches!
+            </div>
+
+            <div class="quiz-section" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;">
+                <h2 style="color:var(--secondary-color);">Quick Quiz</h2>
+                <form id="quiz-modern">
+                    <p style="color:var(--text-secondary);">Who invented the World Wide Web?</p>
+                    <input type="radio" name="q1" value="tim" id="tim"><label for="tim">Tim Berners-Lee</label><br>
+                    <input type="radio" name="q1" value="ada" id="ada"><label for="ada">Ada Lovelace</label><br>
+                    <input type="radio" name="q1" value="alan" id="alan"><label for="alan">Alan Turing</label><br>
+                    <button type="button" onclick="alert(document.querySelector('input[name=q1]:checked')?.value==='tim'?'Correct!':'Try again!')" style="margin-top:1rem;">Check Answer</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025/2026 HCETSS 6th Year Computer Science</p>
+        <a href="../index.html" class="back-to-home">Back to Dashboard</a>
+    </footer>
+</body>
+</html>

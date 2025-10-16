@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Innovations - HCETSS 6th Year Computer Science</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Return to Dashboard</a></li>
+            </ul>
+        </nav>
+        <h1>Key Innovations</h1>
+        <p class="subtitle">Major Developments in Computing</p>
+    </header>
+    <main>
+        <div class="content-section">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Microprocessor (1971)</h3>
+                    <p>The invention of the microprocessor by Intel revolutionized computing, making personal computers possible.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Graphical User Interface (1981)</h3>
+                    <p>GUI made computers accessible to everyone, moving away from text-only interfaces.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Internet (1983)</h3>
+                    <p>The birth of the Internet connected the world and transformed communication, business, and education.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Artificial Intelligence (1956-Present)</h3>
+                    <p>AI has evolved from simple rule-based systems to modern machine learning and deep learning, impacting every industry.</p>
+                </div>
+            </div>
+            <div class="fun-fact" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;color:var(--secondary-color);font-size:1.1rem;">
+                <strong>Did You Know?</strong> The first microprocessor, Intel 4004, could only process 4 bits at a time!
+            </div>
+            <div class="quiz-section" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;">
+                <h2 style="color:var(--secondary-color);">Quick Quiz</h2>
+                <form id="quiz-innovations">
+                    <p style="color:var(--text-secondary);">What year was the first microprocessor invented?</p>
+                    <input type="radio" name="q1" value="1971" id="y1971"><label for="y1971">1971</label><br>
+                    <input type="radio" name="q1" value="1983" id="y1983"><label for="y1983">1983</label><br>
+                    <input type="radio" name="q1" value="2007" id="y2007"><label for="y2007">2007</label><br>
+                    <button type="button" onclick="alert(document.querySelector('input[name=q1]:checked')?.value==='1971'?'Correct!':'Try again!')" style="margin-top:1rem;">Check Answer</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025/2026 HCETSS 6th Year Computer Science</p>
+    </footer>
+</body>
+</html>

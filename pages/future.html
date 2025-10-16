@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future of Computing - HCETSS 6th Year Computer Science</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Return to Dashboard</a></li>
+            </ul>
+        </nav>
+        <h1>Future of Computing</h1>
+        <p class="subtitle">What's Next for Technology?</p>
+    </header>
+    <main>
+        <div class="content-section">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Quantum Computing</h3>
+                    <p>Quantum computers use quantum bits to solve problems far beyond the reach of classical computers.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Artificial General Intelligence</h3>
+                    <p>AGI aims to create machines that can think and learn like humans, with broad applications and ethical challenges.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Biological Computing</h3>
+                    <p>Using biological molecules for computation could lead to new forms of data storage and processing.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Edge & Ubiquitous Computing</h3>
+                    <p>Computing everywhere: from smart devices to embedded systems, making technology part of daily life.</p>
+                </div>
+            </div>
+            <div class="fun-fact" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;color:var(--secondary-color);font-size:1.1rem;">
+                <strong>Did You Know?</strong> Quantum computers use qubits, which can be both 0 and 1 at the same time!
+            </div>
+            <div class="quiz-section" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;">
+                <h2 style="color:var(--secondary-color);">Quick Quiz</h2>
+                <form id="quiz-future">
+                    <p style="color:var(--text-secondary);">What is a qubit?</p>
+                    <input type="radio" name="q1" value="quantum" id="quantum"><label for="quantum">A quantum bit that can be both 0 and 1</label><br>
+                    <input type="radio" name="q1" value="classic" id="classic"><label for="classic">A classic bit that is either 0 or 1</label><br>
+                    <input type="radio" name="q1" value="byte" id="byte"><label for="byte">A byte of data</label><br>
+                    <button type="button" onclick="alert(document.querySelector('input[name=q1]:checked')?.value==='quantum'?'Correct!':'Try again!')" style="margin-top:1rem;">Check Answer</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025/2026 HCETSS 6th Year Computer Science</p>
+    </footer>
+</body>
+</html>

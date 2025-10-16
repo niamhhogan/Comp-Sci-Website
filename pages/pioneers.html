@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computing Pioneers - HCETSS 6th Year Computer Science</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Back to Dashboard</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" style="position:absolute;top:1rem;right:2rem;padding:0.5rem 1rem;border-radius:20px;border:none;background:var(--secondary-color);color:var(--primary-color);font-weight:bold;cursor:pointer;">Light Mode</button>
+        <h1>Computing Pioneers</h1>
+        <p class="subtitle">The Visionaries Who Shaped Computing</p>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Ada Lovelace (1815-1852)</h3>
+                    <p>Often regarded as the world's first computer programmer, Ada Lovelace wrote the first algorithm intended to be processed by a machine.</p>
+                    <ul class="key-points">
+                        <li>First computer programmer</li>
+                        <li>Worked on Analytical Engine</li>
+                        <li>Predicted computer's potential beyond calculation</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Alan Turing (1912-1954)</h3>
+                    <p>Father of theoretical computer science and artificial intelligence. His work was fundamental to the development of computer science.</p>
+                    <ul class="key-points">
+                        <li>Turing Machine concept</li>
+                        <li>Breaking the Enigma code</li>
+                        <li>Turing Test for AI</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Grace Hopper (1906-1992)</h3>
+                    <p>Pioneer of computer programming who invented one of the first linkers and popularized machine-independent programming languages.</p>
+                    <ul class="key-points">
+                        <li>Created COBOL language</li>
+                        <li>Found first computer "bug"</li>
+                        <li>Navy Rear Admiral</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>John von Neumann (1903-1957)</h3>
+                    <p>Developed the architecture upon which most modern computers are based.</p>
+                    <ul class="key-points">
+                        <li>Von Neumann architecture</li>
+                        <li>Stored program concept</li>
+                        <li>Mathematical foundations of computing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="fun-fact" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;color:var(--secondary-color);font-size:1.1rem;">
+                <strong>Did You Know?</strong> Ada Lovelace was the daughter of the famous poet Lord Byron!
+            </div>
+
+            <section class="interactive-section">
+                <h2>Legacy and Impact</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>Programming Languages</h3>
+                        <p>The evolution from machine code to high-level languages</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Computer Architecture</h3>
+                        <p>Fundamental designs that shaped modern computing</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Theoretical Foundations</h3>
+                        <p>Mathematical and logical principles of computing</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="quiz-section" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;">
+                <h2 style="color:var(--secondary-color);">Quick Quiz</h2>
+                <form id="quiz-pioneers">
+                    <p style="color:var(--text-secondary);">Who is considered the first computer programmer?</p>
+                    <input type="radio" name="q1" value="ada" id="ada"><label for="ada">Ada Lovelace</label><br>
+                    <input type="radio" name="q1" value="alan" id="alan"><label for="alan">Alan Turing</label><br>
+                    <input type="radio" name="q1" value="grace" id="grace"><label for="grace">Grace Hopper</label><br>
+                    <button type="button" onclick="alert(document.querySelector('input[name=q1]:checked')?.value==='ada'?'Correct!':'Try again!')" style="margin-top:1rem;">Check Answer</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025/2026 HCETSS 6th Year Computer Science</p>
+        <a href="../index.html" class="back-to-home">Back to Dashboard</a>
+    </footer>
+</body>
+</html>

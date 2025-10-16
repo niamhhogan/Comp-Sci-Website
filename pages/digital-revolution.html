@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Revolution - HCETSS 6th Year Computer Science</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Back to Dashboard</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" style="position:absolute;top:1rem;right:2rem;padding:0.5rem 1rem;border-radius:20px;border:none;background:var(--secondary-color);color:var(--primary-color);font-weight:bold;cursor:pointer;">Light Mode</button>
+        <h1>Digital Revolution</h1>
+        <p class="subtitle">The Birth of Modern Computing</p>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>ENIAC (1945)</h3>
+                    <p>The Electronic Numerical Integrator and Computer (ENIAC) was the first programmable, electronic, general-purpose digital computer. It was Turing-complete and could be reprogrammed to solve a full range of computing problems.</p>
+                    <ul class="key-points">
+                        <li>Weight: 30 tons</li>
+                        <li>Size: 1,800 square feet</li>
+                        <li>Speed: 5000 operations per second</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Transistor Invention (1947)</h3>
+                    <p>The invention of the transistor at Bell Labs revolutionized electronics and computing, eventually replacing vacuum tubes and enabling much smaller computers.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>UNIVAC I (1951)</h3>
+                    <p>The first commercial computer made in the United States, the UNIVAC I (Universal Automatic Computer) was designed principally by J. Presper Eckert and John Mauchly.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>IBM 704 (1954)</h3>
+                    <p>The first mass-produced computer with floating-point arithmetic hardware and indexed addressing. It introduced many programming concepts still in use today.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Integrated Circuit (1958)</h3>
+                    <p>Jack Kilby demonstrated the first integrated circuit, which would later enable the microprocessor revolution and modern computing.</p>
+                </div>
+            </div>
+
+            <section class="interactive-section">
+                <h2>Key Developments</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <h3>Vacuum Tubes to Transistors</h3>
+                        <p>The transition that made computers smaller and more reliable.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Stored Program Concept</h3>
+                        <p>The idea that both data and instructions could be stored in memory.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h3>Binary System</h3>
+                        <p>The foundation of all digital computing.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="fun-fact" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;color:var(--secondary-color);font-size:1.1rem;">
+                <strong>Did You Know?</strong> ENIAC used over 17,000 vacuum tubes and consumed 150 kW of power!
+            </div>
+
+            <div class="quiz-section" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;">
+                <h2 style="color:var(--secondary-color);">Quick Quiz</h2>
+                <form id="quiz-digital">
+                    <p style="color:var(--text-secondary);">What year was ENIAC completed?</p>
+                    <input type="radio" name="q1" value="1945" id="y1945"><label for="y1945">1945</label><br>
+                    <input type="radio" name="q1" value="1951" id="y1951"><label for="y1951">1951</label><br>
+                    <input type="radio" name="q1" value="1981" id="y1981"><label for="y1981">1981</label><br>
+                    <button type="button" onclick="alert(document.querySelector('input[name=q1]:checked')?.value==='1945'?'Correct!':'Try again!')" style="margin-top:1rem;">Check Answer</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025/2026 HCETSS 6th Year Computer Science</p>
+        <a href="../index.html" class="back-to-home">Back to Dashboard</a>
+    </footer>
+</body>
+</html>

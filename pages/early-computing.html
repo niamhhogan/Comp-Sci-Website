@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early Computing - HCETSS 6th Year Computer Science</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Back to Dashboard</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle" style="position:absolute;top:1rem;right:2rem;padding:0.5rem 1rem;border-radius:20px;border:none;background:var(--secondary-color);color:var(--primary-color);font-weight:bold;cursor:pointer;">Light Mode</button>
+        <h1>Early Computing</h1>
+        <p class="subtitle">From Ancient Tools to Mechanical Computers</p>
+    </header>
+
+    <main>
+        <div class="content-section">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>The Abacus (3000 BC)</h3>
+                    <img src="../assets/images/abacus.jpg" alt="Ancient Abacus">
+                    <p>The first known calculating tool, used in ancient civilizations. This simple yet effective device allowed merchants and mathematicians to perform calculations quickly and accurately.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Antikythera Mechanism (100-150 BC)</h3>
+                    <img src="../assets/images/antikythera.jpg" alt="Antikythera Mechanism">
+                    <p>An ancient Greek analog computer used to predict astronomical positions and eclipses. This sophisticated device was centuries ahead of its time.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Slide Rule (1620s)</h3>
+                    <img src="../assets/images/slide-rule.jpg" alt="Slide Rule">
+                    <p>William Oughtred invented the slide rule, which became the most commonly used calculation tool in science and engineering until the 1970s.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Pascal's Calculator (1642)</h3>
+                    <img src="../assets/images/pascaline.jpg" alt="Pascaline">
+                    <p>Blaise Pascal invented the mechanical calculator capable of performing additions and subtractions automatically.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Jacquard Loom (1804)</h3>
+                    <img src="../assets/images/jacquard-loom.jpg" alt="Jacquard Loom">
+                    <p>First use of punched cards to control a machine, introducing the concept of programmable devices.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3>Analytical Engine (1837)</h3>
+                    <img src="../assets/images/analytical-engine.jpg" alt="Analytical Engine">
+                    <p>Charles Babbage's design for a mechanical computer that could be programmed using punched cards. Ada Lovelace wrote the first algorithm intended to be processed by this machine.</p>
+                </div>
+            </div>
+
+            <div class="video-section">
+                <h2>Watch and Learn</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/your-video-id" 
+                            title="Early Computing History" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="quiz-section" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;">
+                <h2 style="color:var(--secondary-color);">Quick Quiz</h2>
+                <form id="quiz-early">
+                    <p style="color:var(--text-secondary);">What is the oldest known computing device?</p>
+                    <input type="radio" name="q1" value="abacus" id="abacus"><label for="abacus">Abacus</label><br>
+                    <input type="radio" name="q1" value="slide-rule" id="slide-rule"><label for="slide-rule">Slide Rule</label><br>
+                    <input type="radio" name="q1" value="analytical-engine" id="analytical-engine"><label for="analytical-engine">Analytical Engine</label><br>
+                    <button type="button" onclick="alert(document.querySelector('input[name=q1]:checked')?.value==='abacus'?'Correct!':'Try again!')" style="margin-top:1rem;">Check Answer</button>
+                </form>
+            </div>
+
+            <div class="fun-fact" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;color:var(--secondary-color);font-size:1.1rem;">
+                <strong>Did You Know?</strong> The abacus is still used today in some parts of the world for teaching arithmetic!
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025/2026 HCETSS 6th Year Computer Science</p>
+        <a href="../index.html" class="back-to-home">Back to Dashboard</a>
+    </footer>
+</body>
+</html>
