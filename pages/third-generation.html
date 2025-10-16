@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Generation — Integrated Circuits</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Back to Dashboard</a></li>
+            </ul>
+        </nav>
+        <h1>Third Generation — Integrated Circuits</h1>
+        <p class="subtitle">1964 - 1971</p>
+    </header>
+    <main>
+        <section>
+            <h2>Overview</h2>
+            <p>Integrated circuits revolutionised computing by packing multiple transistors onto a single chip, making computers smaller, faster, and more affordable.</p>
+        </section>
+        <section>
+            <h2>Third Generation Computers</h2>
+            <p>
+                The Third Generation of computers was defined by the use of integrated circuits (ICs) — small silicon chips that contained multiple transistors and electronic components. This innovation allowed computers to become smaller, faster, more reliable, and more affordable than ever before.
+                Technology included integrated circuits that replaced individual transistors, with each IC containing multiple components on a single chip, improving performance and efficiency. These machines featured increased processing power and speed, reduced size and cost (making computers more accessible to organisations and universities), greater reliability, and lower power consumption compared to previous generations. Multiprogramming became common, allowing multiple tasks to run at once, and software development expanded with high-level programming languages like COBOL and FORTRAN widely used.
+                Key developments include computers moving beyond specialised institutions and into broader commercial and scientific use. The Apollo Guidance Computer (1960s) was one of the first major systems to use integrated circuits, controlling navigation for the Apollo space missions. The shift to integrated circuits represented a huge step in miniaturisation and power, laying the groundwork for the microprocessor revolution that would define the next generation.
+            </p>
+
+            <h3>Key Flashcards</h3>
+            <div class="flashcard-grid">
+                <div class="flashcard">
+                    <div class="flashcard-front">
+                        <strong>First Integrated Circuit</strong>
+                        <div style="display:flex;justify-content:center;align-items:center;width:100%;margin:1rem 0 0.5rem 0;">
+                            <img src="../assets/images/firstintegratedcircuit.jpg" alt="First Integrated Circuit" class="flashcard-img" style="width:80px;height:80px;object-fit:contain;border-radius:8px;background:#fff;box-shadow:0 2px 8px #0002;" />
+                        </div>
+                    </div>
+                    <div class="flashcard-back">
+                        The first integrated circuits were small silicon chips containing multiple transistors and electronic components. They made computers smaller, faster, more reliable, and more affordable than previous generations.
+                    </div>
+                </div>
+
+                <div class="flashcard">
+                    <div class="flashcard-front">
+                        <strong>Modern Integrated Circuits</strong>
+                        <div style="display:flex;justify-content:center;align-items:center;width:100%;margin:1rem 0 0.5rem 0;">
+                            <img src="../assets/images/integratedcircuits.jpg" alt="Modern Integrated Circuits" class="flashcard-img" style="width:80px;height:80px;object-fit:contain;border-radius:8px;background:#fff;box-shadow:0 2px 8px #0002;" />
+                        </div>
+                    </div>
+                    <div class="flashcard-back">
+                        Today's integrated circuits contain billions of transistors on a single chip. Modern ICs power everything from smartphones to supercomputers, a direct evolution from Third Generation technology.
+                    </div>
+                </div>
+
+                <div class="flashcard">
+                    <div class="flashcard-front">
+                        <strong>Apollo Guidance Computer</strong>
+                        <div style="display:flex;justify-content:center;align-items:center;width:100%;margin:1rem 0 0.5rem 0;">
+                            <img src="../assets/images/apolloguidance.jpg" alt="Apollo Guidance Computer" class="flashcard-img" style="width:80px;height:80px;object-fit:contain;border-radius:8px;background:#fff;box-shadow:0 2px 8px #0002;" />
+                        </div>
+                    </div>
+                    <div class="flashcard-back">
+                        The Apollo Guidance Computer (1960s) was one of the first major systems to use integrated circuits, controlling navigation for NASA's Apollo space missions to the Moon.
+                    </div>
+                </div>
+            </div>
+
+            <p class="flashcard-summary">These three flashcards highlight the evolution of integrated circuit technology and a landmark computer system of the Third Generation era.</p>
+        </section>
+    </main>
+    <div style="margin:2rem 0 1rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+        <a href="second-generation.html" style="background:var(--accent-color);color:#fff;padding:0.8rem 1.4rem;border-radius:25px;text-decoration:none;font-weight:bold;border:1px solid var(--accent-color);display:inline-block;">Previous Topic: Second Generation</a>
+        <a href="fourth-generation.html" style="background:var(--secondary-color);color:var(--primary-color);padding:0.8rem 1.4rem;border-radius:25px;text-decoration:none;font-weight:bold;border:1px solid var(--secondary-color);display:inline-block;">Next Topic: Fourth Generation — Microprocessors</a>
+    </div>
+    <style>
+    .flashcard-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        row-gap: 3.5rem;
+        margin-top: 2rem;
+        justify-items: center;
+    }
+    .flashcard {
+        perspective: 1000px;
+        cursor: pointer;
+    }
+    .flashcard-front, .flashcard-back {
+        background: #1e2a3a;
+        color: #fffbe7;
+        border: 2px solid var(--accent-color);
+        border-radius: 12px;
+        min-height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.2rem;
+        font-size: 1.1rem;
+        box-shadow: 0 4px 16px rgba(249,115,22,0.10);
+        backface-visibility: hidden;
+        transition: transform 0.5s;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .flashcard-front {
+        z-index: 2;
+    }
+    .flashcard-back {
+        transform: rotateY(180deg);
+    }
+    .flashcard {
+        position: relative;
+        height: 220px;
+        width: 100%;
+        max-width: 320px;
+    }
+    .flashcard:hover .flashcard-front {
+        transform: rotateY(180deg);
+    }
+    .flashcard:hover .flashcard-back {
+        transform: rotateY(0deg);
+    }
+    .flashcard-summary {
+        margin-top: 2.5rem;
+        color: var(--secondary-color);
+        font-size: 1.15rem;
+        background: rgba(10,25,47,0.85);
+        border-radius: 10px;
+        padding: 1.2rem 1.5rem;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(100,255,218,0.10);
+    }
+    @media (max-width: 900px) {
+        .flashcard-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 600px) {
+        .flashcard-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+    <script>
+    // Flashcard flip logic
+    document.querySelectorAll('.flashcard').forEach(card => {
+        card.addEventListener('click', function() {
+            if (card.classList.contains('flipped')) {
+                card.classList.remove('flipped');
+            } else {
+                card.classList.add('flipped');
+            }
+        });
+    });
+    </script>
+</body>
+</html>

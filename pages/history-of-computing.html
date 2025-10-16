@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="History of Computing Dashboard - HCETSS Computer Science">
+    <title>History of Computing - Dashboard</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+    <link rel="icon" href="../assets/images/abacus.jpg">
+    <meta name="robots" content="noindex, nofollow">
+    <style>
+        /* Scope optional page-specific tweaks if needed */
+        .page-note { text-align:center; color: var(--text-secondary); margin-top: 0.5rem; font-size: 0.95rem; }
+    </style>
+    </head>
+<body>
+    <canvas id="animated-bg" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:-1;"></canvas>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html" class="active">Return to Dashboard</a></li>
+                <li><a href="questions.html">Questions</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+        <h1>History of Computing</h1>
+        <p class="subtitle">Explore the evolution of computing from ancient tools to modern AI.</p>
+    </header>
+    <main>
+        <div class="dashboard">
+            <div class="topic-grid">
+                <div class="topic-card" data-page="early-devices">
+                    <div class="card-content">
+                        <img src="../assets/images/abacus.jpg" alt="Early Devices Icon" class="card-icon">
+                        <h3>Early Devices & Mechanical Era</h3>
+                        <span class="time-period">Ancient - 1940s</span>
+                        <div class="card-overlay"></div>
+                    </div>
+                </div>
+                <div class="topic-card" data-page="first-generation">
+                    <div class="card-content">
+                        <img src="../assets/images/vacuumtubes.jpg" alt="Vacuum Tubes Icon" class="card-icon">
+                        <h3>First Generation — Vacuum Tubes</h3>
+                        <span class="time-period">1940s - 1956</span>
+                        <div class="card-overlay"></div>
+                    </div>
+                </div>
+                <div class="topic-card" data-page="second-generation">
+                    <div class="card-content">
+                        <img src="../assets/images/transistor.jpg" alt="Transistors Icon" class="card-icon">
+                        <h3>Second Generation — Transistors</h3>
+                        <span class="time-period">1956 - 1963</span>
+                        <div class="card-overlay"></div>
+                    </div>
+                </div>
+                <div class="topic-card" data-page="third-generation">
+                    <div class="card-content">
+                        <img src="../assets/images/integratedcircuits.jpg" alt="Integrated Circuits Icon" class="card-icon">
+                        <h3>Third Generation — Integrated Circuits</h3>
+                        <span class="time-period">1964 - 1971</span>
+                        <div class="card-overlay"></div>
+                    </div>
+                </div>
+                <div class="topic-card" data-page="fourth-generation">
+                    <div class="card-content">
+                        <img src="../assets/images/microprosser.jpg" alt="Microprocessors Icon" class="card-icon">
+                        <h3>Fourth Generation — Microprocessors</h3>
+                        <span class="time-period">1971 - Present</span>
+                        <div class="card-overlay"></div>
+                    </div>
+                </div>
+                <div class="topic-card" data-page="internet-history">
+                    <div class="card-content">
+                        <img src="../assets/images/www.jpg" alt="World Wide Web Icon" class="card-icon">
+                        <h3>History of the Internet & World Wide Web</h3>
+                        <span class="time-period">1969 - Present</span>
+                        <div class="card-overlay"></div>
+                    </div>
+                </div>
+                <div class="topic-card" data-page="fifth-generation">
+                    <div class="card-content">
+                        <img src="../assets/images/windows1.jpg" alt="Windows 1.0 Icon" class="card-icon">
+                        <h3>The Transformation to Modern Computing</h3>
+                        <span class="time-period">Present & Beyond</span>
+                        <div class="card-overlay"></div>
+                    </div>
+                </div>
+                <div class="topic-card" data-page="emerging-trends">
+                    <div class="card-content">
+                        <img src="../assets/images/ai.jpg" alt="AI Icon" class="card-icon">
+                        <h3>Emerging Trends & Technologies</h3>
+                        <span class="time-period">Future</span>
+                        <div class="card-overlay"></div>
+                    </div>
+                </div>
+                <div class="topic-card" data-page="key-figures">
+                    <div class="card-content">
+                        <img src="../assets/images/alanturing.jpg" alt="Alan Turing Icon" class="card-icon">
+                        <h3>Key Figures in Computing History</h3>
+                        <span class="time-period">Pioneers</span>
+                        <div class="card-overlay"></div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="timeline-infographic" style="margin-top:3rem;padding:2rem;">
+                <h2 style="color:var(--secondary-color);margin-bottom:2.5rem;text-align:center;">History of Computing Timeline</h2>
+                <div class="timeline" style="position:relative;max-width:1000px;margin:0 auto;">
+                    <div style="position:absolute;top:0;left:50%;width:4px;height:100%;background:var(--secondary-color);transform:translateX(-50%);opacity:0.3;"></div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s ease forwards;">
+                        <div style="position:relative;margin-left:50%;padding-left:3rem;">
+                            <div style="position:absolute;left:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Abacus</h3>
+                                <p style="color:var(--text-secondary);">c. 2400 BC</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">Ancient Babylonian counting tool, earliest known calculating device.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 0.2s ease forwards;">
+                        <div style="position:relative;margin-right:50%;padding-right:3rem;text-align:right;">
+                            <div style="position:absolute;right:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Slide Rule</h3>
+                                <p style="color:var(--text-secondary);">1620</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">Invented by William Oughtred, revolutionized mathematical calculations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 0.4s ease forwards;">
+                        <div style="position:relative;margin-left:50%;padding-left:3rem;">
+                            <div style="position:absolute;left:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Mechanical Calculators</h3>
+                                <p style="color:var(--text-secondary);">1642</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">Pascal's calculator (Pascaline) performs automatic calculations.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 0.6s ease forwards;">
+                        <div style="position:relative;margin-right:50%;padding-right:3rem;text-align:right;">
+                            <div style="position:absolute;right:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Difference Engine</h3>
+                                <p style="color:var(--text-secondary);">1822</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">Babbage's automatic mechanical calculator for polynomial functions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 0.8s ease forwards;">
+                        <div style="position:relative;margin-left:50%;padding-left:3rem;">
+                            <div style="position:absolute;left:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Analytical Engine</h3>
+                                <p style="color:var(--text-secondary);">1837</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">First general-purpose computer design with memory and programs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 1.2s ease forwards;">
+                        <div style="position:relative;margin-left:50%;padding-left:3rem;">
+                            <div style="position:absolute;left:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Vacuum Tubes</h3>
+                                <p style="color:var(--text-secondary);">1904</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">First electronic computing component, enabling digital circuits.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 1.4s ease forwards;">
+                        <div style="position:relative;margin-right:50%;padding-right:3rem;text-align:right;">
+                            <div style="position:absolute;right:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Turing Machine</h3>
+                                <p style="color:var(--text-secondary);">1936</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">Alan Turing defines theoretical basis for computer programming.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 1.6s ease forwards;">
+                        <div style="position:relative;margin-left:50%;padding-left:3rem;">
+                            <div style="position:absolute;left:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Z3 Computer</h3>
+                                <p style="color:var(--text-secondary);">1941</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">First programmable, fully automatic computing machine by Konrad Zuse.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 1.8s ease forwards;">
+                        <div style="position:relative;margin-right:50%;padding-right:3rem;text-align:right;">
+                            <div style="position:absolute;right:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Colossus</h3>
+                                <p style="color:var(--text-secondary);">1943</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">First electronic digital computer, used to break Nazi codes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;opacity:0;animation:fadeIn 0.5s 2s ease forwards;">
+                        <div style="position:relative;margin-left:50%;padding-left:3rem;">
+                            <div style="position:absolute;left:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">ENIAC</h3>
+                                <p style="color:var(--text-secondary);">1945</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">First general-purpose electronic computer, capable of 5000 operations per second.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 2.2s ease forwards;">
+                        <div style="position:relative;margin-right:50%;padding-right:3rem;text-align:right;">
+                            <div style="position:absolute;right:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Transistor</h3>
+                                <p style="color:var(--text-secondary);">1947</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">Invention at Bell Labs revolutionizes electronics, replacing vacuum tubes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 2.4s ease forwards;">
+                        <div style="position:relative;margin-left:50%;padding-left:3rem;">
+                            <div style="position:absolute;left:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">COBOL</h3>
+                                <p style="color:var(--text-secondary);">1959</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">First widely-used business programming language, developed by Grace Hopper.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 2.6s ease forwards;">
+                        <div style="position:relative;margin-right:50%;padding-right:3rem;text-align:right;">
+                            <div style="position:absolute;right:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Integrated Circuit</h3>
+                                <p style="color:var(--text-secondary);">1959</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">Multiple transistors on a single chip, enabling smaller computers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 2.8s ease forwards;">
+                        <div style="position:relative;margin-left:50%;padding-left:3rem;">
+                            <div style="position:absolute;left:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Apollo Guidance Computer</h3>
+                                <p style="color:var(--text-secondary);">1966</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">First embedded computer system, helped land humans on the Moon.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 3s ease forwards;">
+                        <div style="position:relative;margin-right:50%;padding-right:3rem;text-align:right;">
+                            <div style="position:absolute;right:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">ARPANET</h3>
+                                <p style="color:var(--text-secondary);">1969</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">First computer network, predecessor to the modern Internet.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 3.2s ease forwards;">
+                        <div style="position:relative;margin-left:50%;padding-left:3rem;">
+                            <div style="position:absolute;left:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Microprocessor</h3>
+                                <p style="color:var(--text-secondary);">1971</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">Intel 4004: First commercial microprocessor on a single chip.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 1s ease forwards;">
+                        <div style="position:relative;margin-right:50%;padding-right:3rem;text-align:right;">
+                            <div style="position:absolute;right:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Smartphone Era</h3>
+                                <p style="color:var(--text-secondary);">2007</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">Apple releases the first iPhone, transforming mobile computing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 3.6s ease forwards;">
+                        <div style="position:relative;margin-left:50%;padding-left:3rem;">
+                            <div style="position:absolute;left:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">World Wide Web</h3>
+                                <p style="color:var(--text-secondary);">1989</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">Tim Berners-Lee invents the Web at CERN, revolutionizing information sharing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;margin-bottom:4rem;opacity:0;animation:fadeIn 0.5s 3.8s ease forwards;">
+                        <div style="position:relative;margin-right:50%;padding-right:3rem;text-align:right;">
+                            <div style="position:absolute;right:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">Smartphones</h3>
+                                <p style="color:var(--text-secondary);">2007</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">iPhone launches, making mobile computing accessible to everyone.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="position:relative;opacity:0;animation:fadeIn 0.5s 4s ease forwards;">
+                        <div style="position:relative;margin-left:50%;padding-left:3rem;">
+                            <div style="position:absolute;left:-10px;top:50%;width:20px;height:20px;background:var(--secondary-color);border-radius:50%;transform:translateY(-50%);"></div>
+                            <div style="background:var(--card-bg);padding:1.5rem;border-radius:12px;border:2px solid var(--secondary-color);position:relative;">
+                                <h3 style="color:var(--accent-color);margin-bottom:0.5rem;">AI Revolution</h3>
+                                <p style="color:var(--text-secondary);">2022-Present</p>
+                                <p style="color:var(--text-color);font-size:0.9rem;margin-top:0.5rem;">Large Language Models and AI transform computing and society.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    @keyframes fadeIn {
+                        from { opacity: 0; transform: translateY(20px); }
+                        to { opacity: 1; transform: translateY(0); }
+                    }
+                </style>
+            </section>
+        </div>
+        <p class="page-note">Use the cards above to dive into each era or explore the timeline below.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025/2026 HCETSS Computer Science</p>
+    </footer>
+</body>
+</html>

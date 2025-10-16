@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of the Internet & World Wide Web</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Back to Dashboard</a></li>
+            </ul>
+        </nav>
+        <h1>History of the Internet & World Wide Web</h1>
+        <p class="subtitle">Connecting the World: From ARPANET to the Web</p>
+    </header>
+    <main>
+        <section class="notes-section">
+            <h2>Notes: The History of the Internet and the World Wide Web</h2>
+            <h3>1960s – Early Networking</h3>
+            <ul>
+                <li>Researchers began connecting computers to share data and resources.</li>
+                <li>The ARPANET, developed by the U.S. Advanced Research Projects Agency (ARPA), became operational in 1969, linking four universities.</li>
+                <li>Used packet switching, which sent data in small packets for greater efficiency and reliability.</li>
+                <li>ARPANET proved that large-scale computer networking was possible.</li>
+            </ul>
+            <h3>1980s – TCP/IP Standardisation</h3>
+            <ul>
+                <li>In 1983, ARPANET adopted TCP/IP (Transmission Control Protocol / Internet Protocol) as its standard.</li>
+                <li>This allowed different networks to communicate, creating a “network of networks” – the modern internet.</li>
+            </ul>
+            <h3>1990s – The World Wide Web</h3>
+            <ul>
+                <li>Proposed by Tim Berners-Lee at CERN in 1989, the World Wide Web (WWW) made the internet accessible to ordinary users.</li>
+                <li>Launched in 1991, it introduced:</li>
+                <li>HTML – language for creating web pages</li>
+                <li>HTTP – protocol for data transfer</li>
+                <li>URLs – addresses for locating pages</li>
+                <li>Turned the internet from a specialist tool into a global information system.</li>
+            </ul>
+            <h3>1990s–2000s – Expansion and Commercialisation</h3>
+            <ul>
+                <li>Web browsers like Mosaic and Netscape made the web easy to use.</li>
+                <li>Internet Service Providers (ISPs) brought connections into homes.</li>
+                <li>Rise of email, online shopping, search engines, and early social networks.</li>
+            </ul>
+            <h3>Modern Internet</h3>
+            <ul>
+                <li>Broadband, Wi-Fi, and mobile data have made internet access fast and widespread.</li>
+                <li>Web 2.0 technologies enabled interactive, user-generated content, leading to social media, streaming, and cloud computing.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Internet & Web Milestones: Flashcards</h2>
+            <p class="flashcard-hint">Tip: Click or tap a card to flip it.</p>
+            <div class="flashcard-grid">
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <img src="../assets/images/arpanet.jpg" alt="ARPANET" class="flashcard-img">
+                            <h3>ARPANET (1969)</h3>
+                        </div>
+                        <div class="flashcard-back">
+                            <p>Developed by ARPA. First operational in 1969 linking four universities. Used packet switching and proved large-scale networking was possible.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <img src="../assets/images/www.jpg" alt="World Wide Web" class="flashcard-img">
+                            <h3>World Wide Web (1991)</h3>
+                        </div>
+                        <div class="flashcard-back">
+                            <p>Proposed in 1989; launched 1991. Key tech: HTML, HTTP, URLs. Made the internet accessible to ordinary users.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <img src="../assets/images/timbernerslee.jpg" alt="Tim Berners-Lee" class="flashcard-img">
+                            <h3>Tim Berners-Lee</h3>
+                        </div>
+                        <div class="flashcard-back">
+                            <p>British computer scientist at CERN. Invented the Web (1989–1991), built the first browser and server.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <div class="fun-fact" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;color:var(--secondary-color);font-size:1.1rem;">
+            <strong>Did You Know?</strong> The first website is still online at <a href="http://info.cern.ch" target="_blank">info.cern.ch</a>!
+        </div>
+        <div class="quiz-section" style="background:var(--card-bg);border-radius:12px;padding:1rem 2rem;margin:2rem 0;text-align:center;">
+            <h2 style="color:var(--secondary-color);">Quick Quiz</h2>
+            <form id="quiz-internet">
+                <p style="color:var(--text-secondary);">Who invented the World Wide Web?</p>
+                <input type="radio" name="q1" value="tim" id="tim"><label for="tim">Tim Berners-Lee</label><br>
+                <input type="radio" name="q1" value="ada" id="ada"><label for="ada">Ada Lovelace</label><br>
+                <input type="radio" name="q1" value="alan" id="alan"><label for="alan">Alan Turing</label><br>
+                <button type="button" onclick="alert(document.querySelector('input[name=q1]:checked')?.value==='tim'?'Correct!':'Try again!')" style="margin-top:1rem;">Check Answer</button>
+            </form>
+        </div>
+    </main>
+    <div style="margin:2rem 0 1rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+        <a href="fourth-generation.html" style="background:var(--accent-color);color:#fff;padding:0.8rem 1.4rem;border-radius:25px;text-decoration:none;font-weight:bold;border:1px solid var(--accent-color);display:inline-block;">Previous Topic: Fourth Generation</a>
+        <a href="fifth-generation.html" style="background:var(--secondary-color);color:var(--primary-color);padding:0.8rem 1.4rem;border-radius:25px;text-decoration:none;font-weight:bold;border:1px solid var(--secondary-color);display:inline-block;">Next Topic: The Transformation to Modern Computing</a>
+    </div>
+</body>
+</html>

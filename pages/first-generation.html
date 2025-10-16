@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Generation — Vacuum Tubes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Back to Dashboard</a></li>
+            </ul>
+        </nav>
+        <h1>First Generation — Vacuum Tubes</h1>
+        <p class="subtitle">1940s - 1956</p>
+    </header>
+    <main>
+        <section>
+            <h2>Overview</h2>
+            <p>This generation saw the use of vacuum tubes in computers like ENIAC and Colossus, marking the beginning of electronic computing.</p>
+        </section>
+        <section>
+            <h2>First Generation Computers</h2>
+            <p>
+                The First Generation of computers was built using vacuum tubes as the main electronic components. These tubes controlled the flow of electricity and acted as switches and amplifiers, replacing the mechanical parts used in earlier machines.
+                Technology included vacuum tubes for circuitry and magnetic drums for memory. These machines were very large (often filling entire rooms), produced a lot of heat, were prone to failures, consumed large amounts of electricity, and operated using machine language.
+                Key developments from this period include Colossus (1943–44) and ENIAC (1945–46). Although expensive and unreliable by modern standards, First Generation machines were a major breakthrough toward fully electronic computing.
+            </p>
+
+            <h3>Key Flashcards</h3>
+            <div class="flashcard-grid">
+                <div class="flashcard">
+                    <div class="flashcard-front">
+                        <strong>Vacuum Tubes</strong>
+                        <div style="display:flex;justify-content:center;align-items:center;width:100%;margin:1rem 0 0.5rem 0;">
+                            <img src="../assets/images/vacuumtubes.jpg" alt="Vacuum Tubes" class="flashcard-img" style="width:80px;height:80px;object-fit:contain;border-radius:8px;background:#fff;box-shadow:0 2px 8px #0002;" />
+                        </div>
+                    </div>
+                    <div class="flashcard-back">
+                        Vacuum tubes acted as switches and amplifiers in early computers. They made electronic computing possible but generated heat, were large, and had short lifetimes.
+                    </div>
+                </div>
+
+                <div class="flashcard">
+                    <div class="flashcard-front">
+                        <strong>ENIAC</strong>
+                        <div style="display:flex;justify-content:center;align-items:center;width:100%;margin:1rem 0 0.5rem 0;">
+                            <img src="../assets/images/ENIAC.jpg" alt="ENIAC" class="flashcard-img" style="width:80px;height:80px;object-fit:contain;border-radius:8px;background:#fff;box-shadow:0 2px 8px #0002;" />
+                        </div>
+                    </div>
+                    <div class="flashcard-back">
+                        ENIAC (1945–46) was the first general-purpose fully electronic computer. It performed complex calculations far faster than mechanical machines and demonstrated the potential of electronic computing.
+                    </div>
+                </div>
+
+                <div class="flashcard">
+                    <div class="flashcard-front">
+                        <strong>Colossus</strong>
+                        <div style="display:flex;justify-content:center;align-items:center;width:100%;margin:1rem 0 0.5rem 0;">
+                            <img src="../assets/images/colossus.jpg" alt="Colossus" class="flashcard-img" style="width:80px;height:80px;object-fit:contain;border-radius:8px;background:#fff;box-shadow:0 2px 8px #0002;" />
+                        </div>
+                    </div>
+                    <div class="flashcard-back">
+                        Colossus (1943–44) was built in Britain to break German codes during WWII. It is considered one of the earliest programmable electronic computers and was crucial for wartime cryptanalysis.
+                    </div>
+                </div>
+            </div>
+
+            <p class="flashcard-summary">These three flashcards highlight the core technology and two landmark machines of the First Generation era.</p>
+        </section>
+    </main>
+    <div style="margin:2rem 0 1rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+        <a href="early-devices.html" style="background:var(--accent-color);color:#fff;padding:0.8rem 1.4rem;border-radius:25px;text-decoration:none;font-weight:bold;border:1px solid var(--accent-color);display:inline-block;">Previous Topic: Early Devices</a>
+        <a href="second-generation.html" style="background:var(--secondary-color);color:var(--primary-color);padding:0.8rem 1.4rem;border-radius:25px;text-decoration:none;font-weight:bold;border:1px solid var(--secondary-color);display:inline-block;">Next Topic: Second Generation — Transistors</a>
+    </div>
+    <style>
+    .flashcard-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        row-gap: 3.5rem;
+        margin-top: 2rem;
+        justify-items: center;
+    }
+    .flashcard {
+        perspective: 1000px;
+        cursor: pointer;
+    }
+    .flashcard-front, .flashcard-back {
+        background: #1e2a3a;
+        color: #fffbe7;
+        border: 2px solid var(--accent-color);
+        border-radius: 12px;
+        min-height: 180px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1.2rem;
+        font-size: 1.1rem;
+        box-shadow: 0 4px 16px rgba(249,115,22,0.10);
+        backface-visibility: hidden;
+        transition: transform 0.5s;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .flashcard-front {
+        z-index: 2;
+    }
+    .flashcard-back {
+        transform: rotateY(180deg);
+    }
+    .flashcard {
+        position: relative;
+        height: 220px;
+        width: 100%;
+        max-width: 320px;
+    }
+    .flashcard:hover .flashcard-front {
+        transform: rotateY(180deg);
+    }
+    .flashcard:hover .flashcard-back {
+        transform: rotateY(0deg);
+    }
+    .flashcard-summary {
+        margin-top: 2.5rem;
+        color: var(--secondary-color);
+        font-size: 1.15rem;
+        background: rgba(10,25,47,0.85);
+        border-radius: 10px;
+        padding: 1.2rem 1.5rem;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(100,255,218,0.10);
+    }
+    @media (max-width: 900px) {
+        .flashcard-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 600px) {
+        .flashcard-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+    <script>
+    // Flashcard flip logic
+    document.querySelectorAll('.flashcard').forEach(card => {
+        card.addEventListener('click', function() {
+            if (card.classList.contains('flipped')) {
+                card.classList.remove('flipped');
+            } else {
+                card.classList.add('flipped');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
